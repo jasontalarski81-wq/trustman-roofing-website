@@ -155,14 +155,39 @@ a{text-decoration:none;color:inherit}
 .step p{font-size:11px;color:#777;line-height:1.4}
 .arr{color:#bbb;font-size:22px;align-self:center;margin-top:20px;padding:0 2px}
 
+/* ===== FINANCING BANNER ===== */
+.financing-banner{background:linear-gradient(135deg,#00796B 0%,#00ACC1 100%);padding:0}
+.fb-inner{
+  max-width:1320px;margin:0 auto;padding:22px 28px;
+  display:flex;align-items:center;gap:20px;
+}
+.fb-icon{flex-shrink:0;width:56px;height:56px;background:rgba(255,255,255,0.15);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.fb-text{flex:1}
+.fb-text h3{
+  font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(16px,2vw,22px);
+  letter-spacing:1.2px;color:#fff;margin-bottom:3px;
+}
+.fb-text p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.4}
+.fb-btn{
+  flex-shrink:0;background:#fff;color:#00796B;
+  font-family:'Oswald',sans-serif;font-weight:600;font-size:12px;
+  letter-spacing:.7px;padding:12px 24px;border-radius:3px;
+  display:flex;align-items:center;gap:5px;transition:all .2s;white-space:nowrap;
+}
+.fb-btn:hover{background:#E0F2F1;box-shadow:0 4px 16px rgba(0,0,0,0.15)}
+@media(max-width:600px){
+  .fb-inner{flex-direction:column;text-align:center;gap:14px}
+  .fb-btn{width:100%;justify-content:center}
+}
+
 /* ===== STORM CTA ===== */
 .storm-cta{display:flex;min-height:105px;overflow:hidden}
 .storm-left{
-  background:#E8791E;flex:0 0 42%;position:relative;display:flex;align-items:center;
+  background:#00796B;flex:0 0 42%;position:relative;display:flex;align-items:center;
 }
 .storm-left::after{
   content:'';position:absolute;right:-32px;top:0;bottom:0;
-  width:64px;background:#E8791E;transform:skewX(-8deg);z-index:1;
+  width:64px;background:#00796B;transform:skewX(-8deg);z-index:1;
 }
 .sl-content{
   position:relative;z-index:2;display:flex;align-items:center;gap:16px;padding:22px 26px;
